@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Frontpage - Start Bootstrap Template</title>
+    <title>JBV Travel and Tours</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,10 +38,10 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tours</a>
+              <a class="nav-link" href="#tours">Tours</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -63,32 +63,28 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-sm-8">
-          <h2 class="mt-4">Northern Philippine Tours, Just For You.</h2>
+        <div class="col-sm-12 mt-4 text-center">
+          <h2 class="mt-4">Northern Philippines Tours, Just For You.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
           <p>
-            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+            <a class="btn btn-primary btn-lg" href="#">Know More About Us! &raquo;</a>
           </p>
-        </div>
-        <div class="col-sm-4">
-          <h2 class="mt-4">Contact Us</h2>
-          <address>
-            <strong>JBV Travel and Tours Corporation</strong>
-            <br>20 St. Bernadette St.
-            <br>Provident Village, Marikina City
-            <br>
-          </address>
-          <address>
-            <abbr title="Phone">P:</abbr>
-            (+632) 905 266 2083
-            <br>
-            <abbr title="Email">E:</abbr>
-            <a href="mailto:#">jbvtravelandtourscorp@gmail.com</a>
-          </address>
         </div>
       </div>
       <!-- /.row -->
+
+      <!-- Tours -->
+
+      
+
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div id="tours" class="col-sm-8 mt-4 text-center">
+          <h2>Tours</h2>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
 
       <div class="row">
         <div class="col-sm-4 my-4">
@@ -213,12 +209,64 @@
   
         </div>
         <!-- /.row -->
+        
+        <!-- /. tours -->
+
+        <!-- contact -->
+
+        <div id="contact" class="container">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8 text-center mt-5">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-2">
+                  <div class ="form-group">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" class="form-control">
+                  </div>
+                  <div class ="form-group">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" class="form-control">
+                  </div>
+                  <div class ="form-group">
+                    <label for="msg">Message: </label>
+                    <textarea id="msg" type="textarea" class="form-control"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-default" href="mailto:jbvtravelandtourscorp@gmail.com">Submit</button>
+                  </div>
+                </form>
+            </div>
+            <div class="col-sm-1"></div>
+            <div id="address" class="col-sm-5 mt-5">
+                <address>
+                  <strong>JBV Travel and Tours Corporation</strong>
+                  <br>20 St. Bernadette St.
+                  <br>Provident Village, Marikina City
+                  <br>
+                </address>
+                <address>
+                  <abbr title="Phone">P:</abbr>
+                  (+632) 905 266 2083
+                  <br>
+                  <abbr title="Email">E:</abbr>
+                  <a href="mailto:jbvtravelandtourscorp@gmail.com">jbvtravelandtourscorp@gmail.com</a>
+                </address>
+            </div>
+          </div>
+        </div> 
+        <!-- /. contact-->
 
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="mt-5 py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; JBV Travel and Tours Corporation 2017</p>
       </div>
