@@ -76,10 +76,11 @@
             </div>
         </div>
         <div id="location" class="row">
-            <div id="map" class="col-sm-7 mt-5"></div>
             <div class="col-sm-1"></div>
-            <div id="address" class="col-sm-4 mt-5">
-                <address>                                   <strong>JBV Travel and Tours Corporation</strong>
+            <div id="map" class="col-sm-5 mt-5 text-center"></div>
+            <div class="col-sm-1"></div>
+            <div id="address" class="col-sm-5 mt-5">
+                <address>                              <strong>JBV Travel and Tours Corporation</strong>
                   <br>20 St. Bernadette St.
                   <br>Provident Village, Marikina City <br>
               </address>
@@ -113,7 +114,8 @@
         //properties of the map
         var mapProp = {
             zoom: 15,
-            center: prov
+            center: prov,
+            scrollwheel: true
         };
 
         //customize features of the map
