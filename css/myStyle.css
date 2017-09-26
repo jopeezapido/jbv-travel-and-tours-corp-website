@@ -15,11 +15,8 @@
     }
   }
 
-  .navbar {
-    background-color: #22ABDF;
-  }
-  
-  .business-header {
+
+  #mainHeader {
     height: 50vh;
     min-height: 300px;
     background: url('../images/Header.JPG') center center no-repeat scroll;
@@ -58,7 +55,19 @@ footer {
     color: #36A0FF;
 }
 
-/*Responsive Toggle CSS*/
+/*Nav font*/
+
+nav {
+  background-color: white;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:active {
+  font-weight: bold;
+}
 
 
 
