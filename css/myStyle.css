@@ -55,7 +55,7 @@ footer {
     color: #36A0FF;
 }
 
-/*Nav font*/
+/*Nav*/
 
 nav {
   background-color: white;
@@ -67,6 +67,10 @@ nav {
 
 .nav-link:active {
   font-weight: bold;
+}
+
+nav {
+  box-shadow: 0px 2.5px 5px #888888;
 }
 
 
