@@ -215,11 +215,11 @@
 
         <!-- contact -->
 
-        <div id="contact" class="container mt-4">
+        <div id="contact" class="container mt-5">
           <div class="row">
             <div class="col-sm-2">
             </div>
-            <div class="col-sm-8 text-center mt-3">
+            <div class="col-sm-8 text-center mt-4">
                 <h3>Contact Us</h3>
             </div>
             <div class="col-sm-2"></div>
@@ -228,19 +228,23 @@
             <div class="col-sm-6 mt-2">
               <form>
                   <div class ="form-group">
-                    <label for="name"><strong>Name: </strong></label>
-                    <input id="name" type="text" class="form-control">
+                    <label for="name"><strong>Name: * </strong></label>
+                    <input id="name" type="text" class="form-control" placeholder="Input your given name here." required>
                   </div>
                   <div class ="form-group">
-                    <label for="email"><strong>Email: </strong></label>
-                    <input id="email" type="email" class="form-control">
+                    <label for="name"><strong>Phone: </strong></label>
+                    <input id="phone" type="text" class="form-control" placeholder="e.g (+632) 111 111 1111">
+                  </div>
+                  <div class ="form-group">
+                    <label for="email"><strong>Email: *</strong></label>
+                    <input id="email" type="email" class="form-control" placeholder="e.g myaddress@email.com" required>
                   </div>
                   <div class ="form-group">
                     <label for="msg"><strong>Message: </strong></label>
-                    <textarea id="msg" type="textarea" class="form-control"></textarea>
+                    <textarea id="msg" type="textarea" class="form-control" placeholder="Input message here."required></textarea>
                   </div>
                   <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary" href="mailto:jbvtravelandtourscorp@gmail.com">Submit</button>
+                    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
                   </div>
               </form>
             </div>
@@ -277,12 +281,10 @@
 
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!--google apis-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rS7pOLzf_cXDXLMGyH5dO1-47PmoyV0&callback=initMap" type="text/javascript"></script>
     
     <!--my functionalities-->
     <script src="js/myScript.js"></script>
+    <script src="js/form.js"></script>
 
   </body>
 
