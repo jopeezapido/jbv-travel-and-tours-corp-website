@@ -2,7 +2,7 @@
 
 var parent = document.querySelector("nav");
 
-parent.addEventListener("popstate", loadUrl, false);
+parent.addEventListener("popstate", loadUrl);
 
 function loadUrl(e) {
     if (e.target !== e.currentTarget) {
