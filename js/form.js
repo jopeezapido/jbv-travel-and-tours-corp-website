@@ -20,7 +20,7 @@ $(document).ready(function() {
 
         //decision flow
         if(crtName.test(name)) {
-            if(confirm == "YES" {
+            if(confirm == "YES") {
                 //tell the sender that email was sent
                 var confirm = prompt("Type YES to confirm sending");
                 //some code that submits a link to a specified email recipient

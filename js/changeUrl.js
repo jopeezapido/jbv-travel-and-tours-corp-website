@@ -1,8 +1,15 @@
 //function that changes url when in home page
-    function loadHome() {
-        history.pushState({}, "Home", "");
-        history.back({}, "Home", "");
-        history.forward({}, "Home", "");
-    }
 
-    loadHome();
+var parent = document.querySelector("nav");
+
+parent.addEventListener("popstate", loadUrl, false);
+
+function loadUrl(e) {
+    if (e.target !== e.currentTarget) {
+        var clickedItem = e.target.id;
+        var url = "/" + clickedItem;
+        history.pushState(clickedItem, null, url);
+        //alert(clickedItem);
+    }
+    e.stopPropagation();
+}
