@@ -1,8 +1,8 @@
 //function that changes url when in home page
     function loadHome() {
-        window.history.pushState({}, "Home", "");
-        window.history.back({}, "Home", "");
-        window.history.forward({}, "Home", "");
+        history.pushState({}, "Home", "");
+        history.back({}, "Home", "");
+        history.forward({}, "Home", "");
     }
 
-    
+    loadHome();
