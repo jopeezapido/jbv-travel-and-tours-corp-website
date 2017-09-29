@@ -6,3 +6,10 @@ $(document).ready(function() {
     }
     loadHome();
 });
+
+$('#home').click.(function() {
+    function loadHome() {
+        history.pushState({}, "Home", "");
+    }
+    loadHome();
+})
