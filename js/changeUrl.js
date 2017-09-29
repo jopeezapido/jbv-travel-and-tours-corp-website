@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     function loadHome() {
-        history.pushState({}, "Home", "/Home");
+        history.pushState({}, "Home", "");
     }
     loadHome();
 });
