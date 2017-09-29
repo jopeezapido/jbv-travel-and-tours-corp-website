@@ -19,20 +19,19 @@ $(document).ready(function() {
         //alert(name +"\n" + phone +"\n" + email +"\n" + msg);
 
         //decision flow
-        if(crtName.test(name) && crtPhone.test(tel) && crtEmail.test(email)) {
-            //some code that submits a link to a specified email recipient
-
-            //'Are you sure' prompt
-            var confirm = prompt("Type 'Yes' to confirm sending");
-
-            if(confirm == /(Yes)/ig) {
+        if(crtName.test(name)) {
+            if(confirm == "YES" {
                 //tell the sender that email was sent
-                alert('Email Sent!\nKindly wait for a response within 24 hours via email or phone.');
-            } else {
-                prompt('Try again. Click "Yes" to continue, click back to review again your inputs.')
-            }
+                var confirm = prompt("Type YES to confirm sending");
+                //some code that submits a link to a specified email recipient
 
-            //code that refreshes the page to go back to the top
+                alert('Email Sent!\nKindly wait for a response within 24 hours via email or phone.');
+
+                //code that refreshes the page to go back to the top
+                
+            } else {
+                prompt('Try again. Click OK to continue or click CANCEL to review again your inputs.')
+            }
             
         } else {
             alert('Review your inputs.\nKindly ensure you typed the right format.')
