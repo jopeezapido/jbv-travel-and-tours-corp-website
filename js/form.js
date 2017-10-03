@@ -13,7 +13,6 @@ $(document).ready(function() {
     testName = /([a-z])/ig.test(name);
     testContact = /([()+0-9])/g.test(contact);
     testEmail = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/.test(email);
-    testMsg = /(\w\d\s)/g.test(msg);
  
     switch(false) {
       case testName:
@@ -22,9 +21,6 @@ $(document).ready(function() {
         alert('Check format!');
       case testEmail:
         alert('Check format!');
-      case testMsg:
-        alert('Input a message');
-        break;
       default:
         alert('Sent!');
     } 
