@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#submit').validator().click(function(event) {
+  $('#form').validator().click('submit', function(event) {
     if(event.isDefaultPrevented()){
       alert('Check format if correct')
     } else {
