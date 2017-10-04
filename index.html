@@ -13,6 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap validator -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/myStyle.css" rel="stylesheet">
 
@@ -272,22 +277,22 @@
           </div>
           <div class="row">
             <div class="col-sm-6 mt-4">
-              <form data-toggle="validator" role="form">
+              <form id="form" data-toggle="validator" role="form">
                   <div class ="form-group">
-                    <label for="name"><strong>Name: * </strong></label>
-                    <input id="name" type="text" class="form-control" placeholder="Input your given name here." required>
+                    <label for="name"><strong>Name: </strong>*</label>
+                    <input id="name" type="text" class="form-control" placeholder="Input your given name here.">
                   </div>
                   <div class ="form-group">
                     <label for="number"><strong>Phone: </strong></label>
-                    <input id="number" type="number" class="form-control" placeholder="e.g (+632) 111 111 1111" data-error="Input a valid phone format. Be sure to include your local prefix.">
+                    <input id="number" type="text" class="form-control" placeholder="e.g (+632) 111 111 1111" pattern="/([\d\s ()-]/g" data-error="Input a valid phone format. Tip: Be sure to include your local prefix.">
                   </div>
                   <div class ="form-group">
-                    <label for="email"><strong>Email: *</strong></label>
-                    <input id="email" type="email" class="form-control" placeholder="e.g myaddress@email.com" required data-error="Email format invalid.">
+                    <label for="email"><strong>Email: </strong>*</label>
+                    <input id="email" type="email" class="form-control" placeholder="e.g myaddress@email.com" data-error="Email format invalid.">
                   </div>
                   <div class ="form-group">
-                    <label for="msg"><strong>Message: </strong></label>
-                    <textarea id="message" type="textarea" class="form-control" placeholder="Input message here." required></textarea>
+                    <label for="msg"><strong>Leave a message: </strong>*</label>
+                    <textarea id="message" type="textarea" class="form-control" placeholder="Input message here."></textarea>
                   </div>
                   <div class="text-center mt-4">
                     <button id="submit" type="submit" class="btn btn-primary">Submit</button>
@@ -327,11 +332,15 @@
 
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Bootstrap Validator JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
     
     <!--my functionalities-->
     <script src="js/myScript.js"></script>
     <script src="js/form.js"></script>
     <script src="js/changeUrl.js"></script>
+
 
   </body>
 
