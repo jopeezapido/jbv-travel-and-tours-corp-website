@@ -280,7 +280,7 @@
               <form id="form" data-toggle="validator" role="form">
                   <div class ="form-group">
                     <label for="name"><strong>Name: </strong>*</label>
-                    <input id="name" type="text" class="form-control" placeholder="Input your given name here.">
+                    <input id="name" type="text" class="form-control" placeholder="Input your given name here." required>
                   </div>
                   <div class ="form-group">
                     <label for="number"><strong>Phone: </strong></label>
@@ -288,11 +288,11 @@
                   </div>
                   <div class ="form-group">
                     <label for="email"><strong>Email: </strong>*</label>
-                    <input id="email" type="email" class="form-control" placeholder="e.g myaddress@email.com" data-error="Email format invalid.">
+                    <input id="email" type="email" class="form-control" placeholder="e.g myaddress@email.com" data-error="Email format invalid." required>
                   </div>
                   <div class ="form-group">
                     <label for="msg"><strong>Leave a message: </strong>*</label>
-                    <textarea id="message" type="textarea" class="form-control" placeholder="Input message here."></textarea>
+                    <textarea id="message" type="textarea" class="form-control" placeholder="Input message here."required></textarea>
                   </div>
                   <div class="text-center mt-4">
                     <button id="submit" type="submit" class="btn btn-primary">Submit</button>
